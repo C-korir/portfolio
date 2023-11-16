@@ -126,9 +126,16 @@ nav.navbar.bootsnav {
     text-transform: uppercase;
 }
 /*.navbar-brand*/
-
+nav.navbar.bootsnav ul.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* Adjust as needed */
+    align-items: center; /* Adjust as needed */
+    list-style: none;
+}
 /*.nav li*/
 nav.navbar.bootsnav ul.nav > li > a {
+    padding: 0 20px;
     font-size: 16px;
     font-weight: 400;
     text-transform:uppercase;
@@ -180,30 +187,6 @@ nav.navbar.bootsnav .navbar-toggle {
 nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 /*.navbar-toggle */
 
-
-
-/*-------------------------------------
-        3.  Welcome-hero
---------------------------------------*/
-.welcome-hero{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position:relative;
-    background-size:cover;
-    background-position: center;
-    height:890px;
-}
-.welcome-hero:before{
-    position:absolute;
-    content: " ";
-    top:0;
-    left:0;
-    background:rgba(31,44,108,65);
-    width:100%;
-    height:100%;
-}
-
 /*.header-text-area*/
 .header-text h2 {
     color: #fff;
@@ -243,7 +226,14 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 /*-------------------------------------
         4.  About
 --------------------------------------*/
-.about {padding: 50px 0 100px;}
+/*-------------------------------------
+       4. About
+--------------------------------------*/
+.about {
+    padding: 50px 0 100px;
+    text-align: center; 
+}
+
 .about-content {padding-top: 100px;}
 /*.single-about-txt*/
 .single-about-txt h3 {
@@ -319,6 +309,12 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 .about-list-icon ul li a i {
     margin-left: 6px;
 }
+.about-list-icon i {
+    font-size: 24px; /* Adjust the size as needed */
+    color: #333; /* Set the color */
+    margin-right: 10px; /* Adjust the spacing */
+}
+
 /*.ab-list-icon */
 
 /*.single-about-img */
@@ -330,11 +326,16 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 .education {
     background:  #f9fbfd;
     padding-top:  50px;
+    text-align: center;
 }
+
+
 .education-horizontal-timeline {
     padding: 80px 0;
 }
-
+.center-text {
+    text-align: center;
+}
 /*.education-horizontal-timeline*/
 .education-horizontal-timeline .col-sm-4 {padding:0 2px;}
 
@@ -368,8 +369,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 /*-------------------------------------
         6.  Skills
 --------------------------------------*/
-.skills{
-    
+.skills {
+    text-align: center; 
 }
 .skill-content{padding: 50px 0 80px;}
 .single-skill-content{padding-top: 100px;}
@@ -440,6 +441,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .childhood {
     padding: 50px 0 100px;
     border-top: 1px solid #e5ebf2;
+    text-align: center;
 }
 .childhood-content {padding-top: 100px;}
 .single-timeline-box {margin-bottom: 75px;}
@@ -542,6 +544,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .contact {
     background: #f9fbfd;
     padding: 50px 0 100px;
+    text-align: center;
 }
 .single-contact-box {padding-top: 100px;}
 .contact-form  .form-group {
@@ -703,4 +706,3 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     0%   {bottom:0px;}
     100%  {bottom:7px;}
 }
-/*========================Thank you=================
